@@ -20,9 +20,6 @@ mongoose
   .catch((err) => console.log("Database connection error : " + err));
 
 // Routes
-app.use("/", (req, res) => {
-  res.send("hello");
-});
 app.use("/api/users", require("./routes/api/user"));
 app.use("/api/auth", require("./routes/api/auth"));
 
